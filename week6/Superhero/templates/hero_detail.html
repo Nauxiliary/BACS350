@@ -1,0 +1,18 @@
+{% extends 'hero_theme.html' %}
+
+{% block content %}
+<h1>Superhero</h1>
+<h2>{{ hero.name }}</h2>
+<h3>{{ hero.identity }}</h3>
+<p>{{ hero.description }}</p>
+<ul>
+    <li>{{ hero.strength }}</li>
+    <li>{{ hero.weakness }}</li>
+</ul>
+<p>
+    <img src="{{ hero.image }}" alt="{{ hero.name }}" width="500">
+</p>
+<p>
+    <a href="/hero/">Show all heroes</a>
+</p>
+{% endblock content %}
