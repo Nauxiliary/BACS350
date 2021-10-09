@@ -8,7 +8,7 @@ class Hero(models.Model):
     description = models.TextField(default='description')
     weakness = models.CharField(max_length=100, default='weakness')
     strength = models.CharField(max_length=100, default='strength')
-    image = models.CharField(max_length=200)
+    image = models.CharField(max_length=200, default='link to image')
 
     def __str__(self):
         return f'{self.name}, Alias: {self.identity}, Description: {self.description}'

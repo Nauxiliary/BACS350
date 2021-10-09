@@ -6,7 +6,7 @@
 <div>
     <form action="" method="post">{% csrf_token %}
         <p>Are you sure you want to destroy {{ hero.name }}?</p>
-        <input type="submit" value="Finish Them">
+        <input type="submit" value="Finish Them"> <a href="/hero/" class="btn btn-link" role="button">Spare</a>
     </form>
 </div>
 
